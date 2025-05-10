@@ -2,54 +2,75 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>鞘翅目昆蟲檢索表</title>
+    <title>新西蘭鞘翅目檢索表</title>
+    <link href="https://unpkg.com/tippy.js@6/animations/scale.css" rel="stylesheet">
     <style>
-        .taxon { color: #2c3e50; font-weight: bold; }
-        .fig-ref { color: #3498db; font-style: italic; }
-        .note { color: #7f8c8d; font-size: 0.9em; }
+        body {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            font-family: Arial;
+            line-height: 1.6;
+        }
+        .figure {
+            color: #2c82c9;
+            cursor: help;
+            border-bottom: 1px dashed #2c82c9;
+        }
+        h2 {
+            padding-top: 40px;
+            margin-top: -30px;
+        }
+        .key-section {
+            margin: 30px 0;
+            padding: 15px;
+            border-left: 4px solid #2c82c9;
+        }
     </style>
 </head>
 <body>
-    <h2>鞘翅目分類檢索表</h2>
-    <h3>由 J.C. Watt 提供</h3>
 
-    <div class="note">
-        <p>雌蟲跗節式5-5-5但部分或全部雄蟲為5-5-4的科：<br>
-        小蕈蟲科(MONOTOMIDAE)、擬瓢蟲科(CUCUJIDAE)、扁甲科(LAEMOPHLOEIDAE)、<br>
-        隱食甲科(CRYPTOPHAGIDAE)(所有紐西蘭屬)、樹皮甲科(PHLOEOSTICHIDAE)(所有紐西蘭屬)、<br>
-        及扁甲科(PHALACRIDAE)(Cyclaxyra屬)會出現在兩處檢索結果</p>
+<h1>新西蘭已知鞘翅目科檢索表</h1>
+<div class="key-section">
+    <h2>肉食亞目 (ADEPHAGA)</h2>
+    <p>1. 第一腹節被後基節分割 <span class="figure" data-tippy-content="<img src='https://example.com/fig88.jpg'>">圖88</span>, 
+    <span class="figure" data-tippy-content="<img src='https://example.com/fig89.jpg'>">圖89</span>；前胸具背側縫 <span class="figure" data-tippy-content="<img src='https://example.com/fig2.jpg'>">圖2</span>...
+    <a href="#adephaga-2">[2]</a></p>
+
+    <div id="adephaga-2">
+        <h3>2. 步行蟲總科 (Caraboidea)</h3>
+        <p>• 陸生甲蟲，後基節側面不接鞘翅 <span class="figure" data-tippy-content="<img src='https://example.com/fig2.jpg'>">圖2</span>...
+        <a href="#rhysodidae">[3]</a></p>
     </div>
 
-    <ol class="key">
-        <!-- 檢索表內容 -->
-        <li>後基節大型，與後胸腹板癒合，完全分隔第1腹板<span class="fig-ref">(圖88,89)</span>；第1-3腹板癒合；前胸背板具明顯的背側縫<span class="fig-ref">(圖2)</span>
-            <ol>
-                <li>後足無游泳毛；前胸腹板後緣不延伸成中脊；陸生甲蟲，無水生適應體型...3</li>
-                <li>後足具游泳毛；前胸腹板後緣延伸成中脊；體型流線型具水生適應...4</li>
-            </ol>
-        </li>
-        <li>後基節大小不一，通常與後胸腹板可動關節連接，從不完全分隔第1腹板<span class="fig-ref">(圖90)</span>；所有腹板通常分離；前胸背板無背側縫<span class="fig-ref">(圖3)</span>...多食亞目(POLYPHAGA)...5</li>
-        <!-- 以下依此類推添加完整結構 -->
-    </ol>
-
-    <div class="taxon-groups">
-        <h4>主要分類群：</h4>
-        <ul>
-            <li><span class="taxon">牙甲科(HYDROPHILIDAE)</span> <span class="fig-ref">(圖111-113)</span></li>
-            <li><span class="taxon">龍蝨科(DYTISCIDAE)</span> <span class="fig-ref">(圖108,109)</span></li>
-            <li><span class="taxon">豉甲科(GYRINIDAE)</span> <span class="fig-ref">(圖110)</span></li>
-            <!-- 其他分類群依此類推 -->
-        </ul>
+    <div id="rhysodidae">
+        <h3>[1] 樹皮甲科 (RHYSODIDAE)</h3>
+        <p>後基節寬分離 <span class="figure" data-tippy-content="<img src='https://example.com/fig101.jpg'>">圖101</span>...</p>
     </div>
+</div>
 
-    <div class="notes">
-        <h4>使用說明：</h4>
-        <ul>
-            <li>數字編號表示檢索步驟順序</li>
-            <li>括號內數字表示返回步驟，如(2)表示返回第2步</li>
-            <li>斜體數字編號[如<span class="taxon">[1]</span>]表示最終分類結果</li>
-            <li>圖例引用格式：<span class="fig-ref">(圖XX)</span></li>
-        </ul>
+<div class="key-section">
+    <h2>多食亞目 (POLYPHAGA)</h2>
+    <p>5. 觸角具櫛片狀棒節 <span class="figure" data-tippy-content="<img src='https://example.com/fig30.jpg'>">圖30</span>...
+    <a href="#group-a">[A組]</a></p>
+
+    <div id="group-a">
+        <h3>[19] 吉丁蟲科 (BUPRESTIDAE)</h3>
+        <p>體型如子彈 <span class="figure" data-tippy-content="<img src='https://example.com/fig157.jpg'>">圖157</span>...</p>
     </div>
+</div>
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+    tippy('.figure', {
+        allowHTML: true,
+        interactive: true,
+        placement: 'right',
+        theme: 'light-border',
+        animation: 'scale'
+    });
+</script>
+
 </body>
 </html>
