@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>甲蟲檢索表</title>
+  <title>新西蘭鞘翅目檢索表</title>
+  <!-- 載入懸停提示套件 -->
   <link href="https://unpkg.com/tippy.js@6/animations/scale.css" rel="stylesheet">
+  <style>
+    body { max-width: 800px; margin: 20px auto; padding: 20px; font-family: Arial; }
+    .figure { color: blue; cursor: help; }
+    h2 { padding-top: 50px; margin-top: -30px; } /* 錨點定位修正 */
+  </style>
 </head>
 <body>
-  <h1>新西蘭鞘翅目檢索表</h1>
 
-  <!-- 檢索表內容 -->
-  <div>
-    <a href="#carabidae">[2]</a> 特徵描述...
-    <span class="tooltip" data-tippy-content="<img src='https://via.placeholder.com/200x100'/>">圖2</span>
-  </div>
+<h1>新西蘭已知鞘翅目科檢索表</h1>
 
-  <div id="carabidae" style="margin-top: 500px;"> <!-- 模擬跳轉位置 -->
-    <h2>步行蟲科</h2>
-    <p>詳細內容...</p>
-  </div>
+<!-- 肉食亞目段落 -->
+<div>
+  <h2>肉食亞目</h2>
+  <p>2(1) 陸生甲蟲，足適應爬行或奔跑；後基節側面不與鞘翅相接
+    <span class="figure" data-tippy-content="<img src='https://example.com/fig2.jpg' width='200'>">圖2</span>；
+    觸角多具短毛；背面具明顯直立的感器剛毛<span class="figure" data-tippy-content="<img src='https://example.com/fig107.jpg'>">圖107</span>...
+    <a href="#carabidae">[3]</a>
+  </p>
+</div>
 
-  <!-- 載入互動套件 -->
-  <script src="https://unpkg.com/@popperjs/core@2"></script>
-  <script src="https://unpkg.com/tippy.js@6"></script>
-  <script>
-    tippy('.tooltip', {
-      allowHTML: true,
-      interactive: true
-    });
-  </script>
+<!-- 步行蟲科錨點 -->
+<div id="carabidae">
+  <h2>[2] 步行蟲科</h2>
+  <p>後基節相接或窄分離<span class="figure" data-tippy-content="<img src='https://example.com/fig2.jpg'>">圖2</span>；
+  觸角細長，絲狀<span class="figure" data-tippy-content="<img src='https://example.com/fig1.jpg'>">圖1</span>...</p>
+</div>
+
+<!-- 多食亞目段落 -->
+<div>
+  <h2>多食亞目</h2>
+  <p>7(6) 體型如子彈，側緣近平行且腹端三角形；頭部下彎；腹部前兩腹節強烈癒合...
+    <a href="#buprestidae">[19]</a>
+  </p>
+</div>
+
+<div id="buprestidae">
+  <h2>[19] 吉丁蟲科</h2>
+  <p>體型如子彈...<span class="figure" data-tippy-content="<img src='https://example.com/fig157.jpg'>">圖157</span></p>
+</div>
+
+<!-- 載入互動套件 -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+  tippy('.figure', {
+    allowHTML: true,
+    interactive: true,
+    placement: 'right'
+  });
+</script>
+
 </body>
 </html>
