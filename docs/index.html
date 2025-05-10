@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>甲蟲檢索表</title>
+  <link href="https://unpkg.com/tippy.js@6/animations/scale.css" rel="stylesheet">
+</head>
+<body>
+  <h1>新西蘭鞘翅目檢索表</h1>
+
+  <!-- 檢索表內容 -->
+  <div>
+    <a href="#carabidae">[2]</a> 特徵描述...
+    <span class="tooltip" data-tippy-content="<img src='https://via.placeholder.com/200x100'/>">圖2</span>
+  </div>
+
+  <div id="carabidae" style="margin-top: 500px;"> <!-- 模擬跳轉位置 -->
+    <h2>步行蟲科</h2>
+    <p>詳細內容...</p>
+  </div>
+
+  <!-- 載入互動套件 -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script>
+    tippy('.tooltip', {
+      allowHTML: true,
+      interactive: true
+    });
+  </script>
+</body>
+</html>
