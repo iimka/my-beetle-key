@@ -1,76 +1,31 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>新西蘭鞘翅目檢索表</title>
-    <link href="https://unpkg.com/tippy.js@6/animations/scale.css" rel="stylesheet">
-    <style>
-        body {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            font-family: Arial;
-            line-height: 1.6;
-        }
-        .figure {
-            color: #2c82c9;
-            cursor: help;
-            border-bottom: 1px dashed #2c82c9;
-        }
-        h2 {
-            padding-top: 40px;
-            margin-top: -30px;
-        }
-        .key-section {
-            margin: 30px 0;
-            padding: 15px;
-            border-left: 4px solid #2c82c9;
-        }
-    </style>
+  <title>甲蟲檢索表</title>
+  <link href="https://unpkg.com/tippy.js@6/animations/scale.css" rel="stylesheet">
 </head>
 <body>
+  <h1>新西蘭鞘翅目檢索表</h1>
 
-<h1>新西蘭已知鞘翅目科檢索表</h1>
-<div class="key-section">
-    <h2>肉食亞目 (ADEPHAGA)</h2>
-    <p>1. 第一腹節被後基節分割 <span class="figure" data-tippy-content="<img src='https://example.com/fig88.jpg'>">圖88</span>, 
-    <span class="figure" data-tippy-content="<img src='https://example.com/fig89.jpg'>">圖89</span>；前胸具背側縫 <span class="figure" data-tippy-content="<img src='https://example.com/fig2.jpg'>">圖2</span>...
-    <a href="#adephaga-2">[2]</a></p>
+  <!-- 檢索表內容 -->
+  <div>
+    <a href="#carabidae">[2]</a> 特徵描述...
+    <span class="tooltip" data-tippy-content="<img src='https://via.placeholder.com/200x100'/>">圖2</span>
+  </div>
 
-    <div id="adephaga-2">
-        <h3>2. 步行蟲總科 (Caraboidea)</h3>
-        <p>• 陸生甲蟲，後基節側面不接鞘翅 <span class="figure" data-tippy-content="<img src='https://example.com/fig2.jpg'>">圖2</span>...
-        <a href="#rhysodidae">[3]</a></p>
-    </div>
+  <div id="carabidae" style="margin-top: 500px;"> <!-- 模擬跳轉位置 -->
+    <h2>步行蟲科</h2>
+    <p>詳細內容...</p>
+  </div>
 
-    <div id="rhysodidae">
-        <h3>[1] 樹皮甲科 (RHYSODIDAE)</h3>
-        <p>後基節寬分離 <span class="figure" data-tippy-content="<img src='https://example.com/fig101.jpg'>">圖101</span>...</p>
-    </div>
-</div>
-
-<div class="key-section">
-    <h2>多食亞目 (POLYPHAGA)</h2>
-    <p>5. 觸角具櫛片狀棒節 <span class="figure" data-tippy-content="<img src='https://example.com/fig30.jpg'>">圖30</span>...
-    <a href="#group-a">[A組]</a></p>
-
-    <div id="group-a">
-        <h3>[19] 吉丁蟲科 (BUPRESTIDAE)</h3>
-        <p>體型如子彈 <span class="figure" data-tippy-content="<img src='https://example.com/fig157.jpg'>">圖157</span>...</p>
-    </div>
-</div>
-
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/tippy.js@6"></script>
-<script>
-    tippy('.figure', {
-        allowHTML: true,
-        interactive: true,
-        placement: 'right',
-        theme: 'light-border',
-        animation: 'scale'
+  <!-- 載入互動套件 -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script>
+    tippy('.tooltip', {
+      allowHTML: true,
+      interactive: true
     });
-</script>
-
+  </script>
 </body>
 </html>
